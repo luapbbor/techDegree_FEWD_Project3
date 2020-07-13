@@ -1,0 +1,148 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 1em;
+    font-family: Montserrat Alternates, sans-serif;
+    background-color: #f7e9c2;
+}
+
+
+.wrapper, header, form, footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+
+.wrapper {
+
+    width: 90%;
+    margin: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    flex-grow: 1;
+    font-size: 1.6em;
+    padding: 0 0 10px;
+}
+
+h2, legend {
+    font-size: 1.2em;
+}
+
+form {
+    border-top: 2px double black;
+}
+
+
+fieldset {
+    border: none;
+    margin: 20px 0 10px;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+label, input, select, textarea, footer, header {
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    border:none;
+    border-radius: 5px;
+    height: 2rem;
+    margin-top: 50px;
+}
+
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+::placeholder {
+    text-align: right;
+}
+
+/* https://css-tricks.com/almanac/properties/t/transition/ */
+input:hover {
+    transition: background-color 1s ease;
+    background-color: darkslategray;
+}
+
+input:focus {
+    background-color: #e6f7ea;
+}
+
+
+.inline {
+    display: flex;
+    flex-wrap:no-wrap;
+    justify-content: center;
+}
+
+.inline input {
+    width: 20%;
+}
+
+#message {
+    margin-top: 10px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    background-color: red;
+}
+
+input[type=submit] {
+    background-color: #4adbad;
+    border: none;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem; /* 16px x 1.2 = 19.2px */
+    min-height: 50px;
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+  }
+  
+/* ============================= Media Queries ============================= */
+
+/* ======== Desktop ======== */
+
+@media (min-width:768px) {
+
+ .wrapper {
+     width: 60%;
+     margin: auto;
+ }
+
+ form label {
+     width: 20%;
+ }
+
+ form input, form select {
+     width: 70%;
+ }
+
+
+
+}
