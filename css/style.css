@@ -19,6 +19,20 @@ header {
     justify-content: center;
 }
 
+.newsletterIntro {
+    padding-bottom: 10px;
+}
+
+/* https://stackoverflow.com/questions/18917474/double-border-in-css-with-gap-in-the-middle
+Credit: avrahamcool
+*/
+.doubleLine
+{
+    margin-top: 20px;
+    border-top: 4px solid black;
+    height: 2px;
+    border-bottom: 2px solid black;
+}
 
 .wrapper {
 
@@ -41,19 +55,29 @@ h2, legend {
     font-size: 1.2em;
 }
 
-form {
-    border-top: 2px double black;
-}
-
 
 fieldset {
     border: none;
+    width: 100%;
     margin: 20px 0 10px;
 }
 
-legend {
-    margin-bottom: 20px;
+fieldset:first-child {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
 }
+
+legend {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* strong {
+    display: block;
+    border-top: 3px solid black;
+    width: 100%;
+    padding-top: 20px;
+} */
 
 label, input, select, textarea, footer, header {
     width: 100%;
@@ -104,9 +128,6 @@ input:focus {
     border-radius: 5px;
 }
 
-input[type=checkbox] {
-    background-color: red;
-}
 
 input[type=submit] {
     background-color: #4adbad;
@@ -130,19 +151,41 @@ input[type=submit] {
 
 @media (min-width:768px) {
 
- .wrapper {
-     width: 60%;
-     margin: auto;
- }
-
- form label {
-     width: 20%;
- }
-
- form input, form select {
-     width: 70%;
- }
+    .wrapper {
+        width: 60%;
+        margin: auto;
+    }
 
 
+    form label {
+        width: 30%;
+    }
 
+    form input, form select {
+        width: 68%;
+    }
+
+    .inline {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    form fieldset {
+        width: 100%;
+    }
+
+    #message {
+        width: 100%;
+        margin: auto;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        margin: 20px auto;
+    }
+  
 }
+
+
+
+

@@ -18,8 +18,11 @@
     <div class="wrapper">
         <main>
             <section>
-                <h2 class="center-text">Sign up for our newsletter</h2>
-                <p class="center-text">Get the latest news on how your code is doing right in your inbox</p>
+                <div class="newsletterIntro">
+                    <h2 class="center-text">Sign up for our newsletter</h2>
+                    <p class="center-text">Get the latest news on how your code is doing right in your inbox</p>
+                </div>
+                <div class="doubleLine"></div>
                 <form action="index.hmtl" method="post">
                     <fieldset id="contactInformation_fs">
                     <legend><strong>Contact Information</strong></legend>
@@ -67,7 +70,7 @@
                             <input type="radio" id="plainTextFormat" name="newsletterFormat">
                             <label for="plainTextFormat">Plain Text</label>
                         </div>
-                        <label for="message">Other topics you'd like to hear about</label>
+                        <p>Other topics you'd like to hear about</p>
                         <textarea name="message" id="message"></textarea>
                         <input type="submit" value="submit">
                     </fieldset>       
