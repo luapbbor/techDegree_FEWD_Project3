@@ -98,6 +98,16 @@ input, select {
 /* https://css-tricks.com/almanac/selectors/p/placeholder/ */
 ::placeholder {
     text-align: right;
+    padding-right: 5px;
+} 
+
+/* --- Removes the "spinner" from number in put fields so you can see the 'placeholder' for the phone field in firefox
+https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+*/
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /* https://css-tricks.com/almanac/properties/t/transition/ */
@@ -113,7 +123,7 @@ input:focus {
 
 .inline {
     display: flex;
-    flex-wrap:no-wrap;
+    flex-wrap:nowrap;
     justify-content: center;
 }
 
@@ -145,7 +155,7 @@ input[type=submit] {
       justify-content: center;
   }
   
-/* ============================= Media Queries ============================= */
+/* ============================= Media Query ============================= */
 
 /* ======== Desktop ======== */
 
