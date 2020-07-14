@@ -111,13 +111,9 @@ input[type=number] {
 }
 
 /* https://css-tricks.com/almanac/properties/t/transition/ */
-input:hover {
-    transition: background-color 1s ease;
-    background-color: darkslategray;
-}
-
 input:focus {
-    background-color: #e6f7ea;
+    transition: background-color 2s ease;
+    background-color: darkslategray;
 }
 
 
@@ -169,6 +165,10 @@ input[type=submit] {
 
     form label {
         width: 30%;
+    }
+    
+    #textAreaLabel{
+        min-width: 100%;
     }
 
     form input, form select {
